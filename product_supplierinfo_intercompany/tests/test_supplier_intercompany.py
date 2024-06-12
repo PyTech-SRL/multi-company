@@ -84,6 +84,9 @@ class TestIntercompanySupplierCase(SavepointCase):
         self.assertEqual(len(supplierinfo), 1)
         self.assertEqual(len(supplierinfo.intercompany_pricelist_id), 1)
         self.assertEqual(supplierinfo.price, price)
+        self.assertEqual(
+            supplierinfo.currency_id, supplierinfo.intercompany_pricelist_id.currency_id
+        )
 
 
 class TestIntercompanySupplier(TestIntercompanySupplierCase):
@@ -347,3 +350,11 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
         # Select using sudo (as some native odoo code do it)
         supplier = self.product_product_4b.sudo()._select_seller()
         self.assertEqual(supplier.name, partner)
+
+    def test_currency_consistency(self):
+        different_currency = self.env.ref("base.CHF")
+        self.assertNotEqual(self.pricelist_intercompany.currency_id, different_currency)
+        self.pricelist_intercompany.currency_id = different_currency
+        template = self.env["product.template"].create({"name": "New One"})
+        self._add_item(template, 30)
+        self._check_supplier_info_for(template, 30)

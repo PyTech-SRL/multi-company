@@ -23,6 +23,7 @@ class ProductIntercompanySupplierMixin(models.AbstractModel):
             "name": pricelist.company_id.partner_id.id,
             "company_id": False,
             "price": price,
+            "currency_id": pricelist.currency_id.id,
         }
         return res
 
