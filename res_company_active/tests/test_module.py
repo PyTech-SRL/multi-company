@@ -7,11 +7,14 @@ from odoo.tests.common import TransactionCase
 
 
 class TestModule(TransactionCase):
-    def setUp(self):
-        super().setUp()
-        self.test_company = self.env.ref("res_company_active.company_test")
-        self.main_company = self.env.ref("base.main_company")
-        self.demo_user = self.env.ref("base.user_demo")
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        # Set tracking_disable in context
+        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+        cls.test_company = cls.env.ref("res_company_active.company_test")
+        cls.main_company = cls.env.ref("base.main_company")
+        cls.demo_user = cls.env.ref("base.user_demo")
 
     # Test Section
     def test_01_disable_without_user(self):
