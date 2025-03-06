@@ -31,7 +31,7 @@ class ResCompanyCategory(models.Model):
         domain=[("type", "=", "view")],
     )
 
-    parent_path = fields.Char(index=True, unaccent=False)
+    parent_path = fields.Char(index=True)
 
     child_ids = fields.One2many(
         string="Category Childs",
