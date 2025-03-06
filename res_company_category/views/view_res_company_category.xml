@@ -5,7 +5,6 @@ Copyright (C) 2019 - Today: GRAP (http://www.grap.coop)
 License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 -->
 <odoo>
-
     <record id="action_company_category_to_company" model="ir.actions.act_window">
         <field name="name">Companies</field>
         <field name="res_model">res.company</field>
@@ -16,7 +15,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         }
         </field>
     </record>
-
 
     <record id="view_res_company_category_tree" model="ir.ui.view">
         <field name="model">res.company.category</field>
@@ -58,13 +56,17 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 />
                 <div class="oe_title">
                     <label class="oe_edit_only" for="name" string="Name" />
-                    <h1><field name="name" /></h1>
+                    <h1>
+                        <field name="name" />
+                    </h1>
                     <label
                         class="oe_edit_only"
                         for="parent_id"
                         string="Parent Category"
                     />
-                    <h2><field name="parent_id" /></h2>
+                    <h2>
+                        <field name="parent_id" />
+                    </h2>
                 </div>
 
                 <group>
@@ -96,12 +98,10 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="view_mode">tree,form</field>
     </record>
 
-
     <menuitem
         id="menu_company_category"
         parent="base.menu_users"
         sequence="20"
         action="action_company_category"
     />
-
 </odoo>
