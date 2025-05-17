@@ -65,9 +65,18 @@ class ProductTemplate(models.Model):
         return res
 
     def write(self, vals):
-        res = super(ProductTemplate, self).write(vals)
-        for rec in self:
-            rec.update_intercompany_prices()
+        res = super().write(vals)
+        if (
+            "sale_ok" in vals
+            or "purchase_ok" in vals
+            or "list_price" in vals
+            or "standard_price" in vals
+            or "company_id" in vals
+            or "company_ids" in vals
+            or "active" in vals
+        ):
+            for rec in self:
+                rec.update_intercompany_prices()
         return res
 
     def update_intercompany_prices(self):
