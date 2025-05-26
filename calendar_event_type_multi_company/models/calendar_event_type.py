@@ -5,7 +5,6 @@ from odoo import fields, models
 
 
 class CalendarEventType(models.Model):
-
     _inherit = "calendar.event.type"
 
     company_id = fields.Many2one(

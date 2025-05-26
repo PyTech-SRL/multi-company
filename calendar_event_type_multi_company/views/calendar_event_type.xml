@@ -2,7 +2,6 @@
 <!-- Copyright 2019 ACSONE SA/NV
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record model="ir.ui.view" id="calendar_event_type_tree_view">
         <field
             name="name"
@@ -10,10 +9,9 @@
         <field name="model">calendar.event.type</field>
         <field name="inherit_id" ref="calendar.view_calendar_event_type_tree" />
         <field name="arch" type="xml">
-            <tree position="inside">
+            <list position="inside">
                 <field name="company_id" groups="base.group_multi_company" />
-            </tree>
+            </list>
         </field>
     </record>
-
 </odoo>
