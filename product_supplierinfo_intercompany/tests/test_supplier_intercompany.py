@@ -149,6 +149,14 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
         supplierinfo = self._get_supplier_info()
         self.assertEqual(len(supplierinfo), 0)
 
+    def test_archive_pricelist_intercompany(self):
+        self.pricelist_intercompany.active = False
+        supplierinfo = self._get_supplier_info()
+        self.assertEqual(len(supplierinfo), 0)
+        self.pricelist_intercompany.active = True
+        supplierinfo = self._get_supplier_info()
+        self.assertEqual(len(supplierinfo), 4)
+
     def test_intercompany_access_rule(self):
         # Check that supplier this supplier info are not visible
         # with the current user "demo"
@@ -167,6 +175,10 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
     def test_add_template_item(self):
         template = self.env.ref("product.product_product_2_product_template")
         self._add_item(template, 30)
+        self._check_supplier_info_for(template, 30)
+        template.active = False
+        self._check_no_supplier_info_for(template)
+        template.active = True
         self._check_supplier_info_for(template, 30)
 
     def test_update_product_item(self):
