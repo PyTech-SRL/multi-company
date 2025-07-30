@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_inter_company](account_invoice_inter_company/) | 18.0.1.0.0 |  | Intercompany invoice rules
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 18.0.1.0.0 |  | This module adds a wizard to create companies easily
+[calendar_event_multi_company](calendar_event_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to calendar events
 [crm_stage_multi_company](crm_stage_multi_company/) | 18.0.1.0.0 |  | This module adds support for multi company on crm stage.
 [mail_multicompany](mail_multicompany/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 18.0.1.0.0 | <a href='https://github.com/Olivier-LAURENT'><img src='https://github.com/Olivier-LAURENT.png' width='32' height='32' style='border-radius:50%;' alt='Olivier-LAURENT'/></a> | Mail Template Multi Company
