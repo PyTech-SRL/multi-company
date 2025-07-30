@@ -1,11 +1,12 @@
 [project]
 name = "odoo-addons-oca-multi-company"
-version = "18.0.20250730.0"
+version = "18.0.20250730.1"
 dependencies = [
     "odoo-addon-account_invoice_inter_company==18.0.*",
     "odoo-addon-account_multicompany_easy_creation==18.0.*",
     "odoo-addon-calendar_event_multi_company==18.0.*",
     "odoo-addon-crm_stage_multi_company==18.0.*",
+    "odoo-addon-crm_tag_multi_company==18.0.*",
     "odoo-addon-mail_multicompany==18.0.*",
     "odoo-addon-mail_template_multi_company==18.0.*",
     "odoo-addon-partner_category_multi_company==18.0.*",
