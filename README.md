@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [crm_lost_reason_multi_company](crm_lost_reason_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to crm lost reason
 [crm_stage_multi_company](crm_stage_multi_company/) | 18.0.1.0.0 |  | This module adds support for multi company on crm stage.
 [crm_tag_multi_company](crm_tag_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to crm tag
+[hr_employee_multi_company](hr_employee_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to HR Employee
 [ir_filters_multi_company](ir_filters_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to user-defined filters
 [ir_ui_view_multi_company](ir_ui_view_multi_company/) | 18.0.1.0.0 |  | This module allows companies operating in a multi-company environment to define custom views for specific companies.
 [mail_multicompany](mail_multicompany/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
