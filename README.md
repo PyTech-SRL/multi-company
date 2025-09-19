@@ -32,6 +32,7 @@ addon | version | maintainers | summary
 [hr_employee_multi_company](hr_employee_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to HR Employee
 [ir_filters_multi_company](ir_filters_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to user-defined filters
 [ir_ui_view_multi_company](ir_ui_view_multi_company/) | 18.0.1.0.0 |  | This module allows companies operating in a multi-company environment to define custom views for specific companies.
+[login_all_company](login_all_company/) | 18.0.0.0.0 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 18.0.1.0.0 | <a href='https://github.com/Olivier-LAURENT'><img src='https://github.com/Olivier-LAURENT.png' width='32' height='32' style='border-radius:50%;' alt='Olivier-LAURENT'/></a> | Mail Template Multi Company
 [partner_category_multi_company](partner_category_multi_company/) | 18.0.1.0.0 |  | This module add multi-company management to partner categories
