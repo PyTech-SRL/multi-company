@@ -24,6 +24,7 @@ class ProductIntercompanySupplierMixin(models.AbstractModel):
             "company_id": False,
             "price": price,
             "currency_id": pricelist.currency_id.id,
+            "delay": pricelist.intercompany_supplier_lead_time,
         }
         return res
 
