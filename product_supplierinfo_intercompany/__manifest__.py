@@ -14,7 +14,7 @@
         "purchase_sale_inter_company",
     ],
     "data": ["views/pricelist_views.xml", "security/supplierinfo.xml"],
-    "demo": ["demo/pricelist.xml"],
+    "demo": ["demo/product_pricelist_demo.xml"],
     "installable": True,
     "maintainers": ["PierrickBrun", "sebastienbeau", "kevinkhao"],
 }
