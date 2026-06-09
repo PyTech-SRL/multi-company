@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-04 15:47+0000\n"
-"PO-Revision-Date: 2026-06-09 07:00+0000\n"
+"PO-Revision-Date: 2026-06-09 07:04+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -44,22 +44,25 @@ msgid ""
 "created.\n"
 " The intercompany user must at least be Sale User."
 msgstr ""
+"Ustvari prodajni nalog, ko je ustvarjen nabavni nalog s to družbo kot "
+"dobaviteljem.\n"
+" Meddružbeni uporabnik mora biti vsaj uporabnik prodaje."
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_purchase_order_line__intercompany_sale_line_id
 msgid "Intercompany Sale Line"
-msgstr ""
+msgstr "Meddružbena prodajna postavka"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_purchase_order__intercompany_sale_order_id
 msgid "Intercompany Sale Order"
-msgstr ""
+msgstr "Meddružbeni prodajni nalog"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__intercompany_sale_user_id
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__intercompany_sale_user_id
 msgid "Intercompany Sale User"
-msgstr ""
+msgstr "Meddružbeni prodajni uporabnik"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_account_move
@@ -119,18 +122,20 @@ msgid ""
 "The generated sale orders with reference %(orders)s can't be modified. "
 "They're either unconfirmed or locked for modifications."
 msgstr ""
+"Ustvarjenih prodajnih nalogov z referenco %(orders)s ni mogoče spreminjati. "
+"So bodisi nepotrjeni bodisi zaklenjeni za spremembe."
 
 #. module: purchase_sale_inter_company
 #. odoo-python
 #: code:addons/purchase_sale_inter_company/models/purchase_order.py:0
 msgid "The inter-company sales order has been created: %s"
-msgstr ""
+msgstr "Meddružbeni prodajni nalog je bil ustvarjen: %s"
 
 #. module: purchase_sale_inter_company
 #. odoo-python
 #: code:addons/purchase_sale_inter_company/models/account_move.py:0
 msgid "This vendor bill is related with: %(origin)s"
-msgstr ""
+msgstr "Ta prejeti račun je povezan z: %(origin)s"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__intercompany_sale_user_id
@@ -138,6 +143,8 @@ msgid ""
 "User used to create the sales order arising from a purchase order in another "
 "company."
 msgstr ""
+"Uporabnik, ki se uporablja za ustvarjanje prodajnega naloga, ki izhaja iz "
+"nabavnega naloga v drugi družbi."
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_company__sale_auto_validation
@@ -153,7 +160,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/purchase_sale_inter_company/models/purchase_order.py:0
 msgid "You can't cancel an order that is %s"
-msgstr ""
+msgstr "Naročila, ki je %s, ni mogoče preklicati"
 
 #. module: purchase_sale_inter_company
 #. odoo-python
@@ -161,6 +168,8 @@ msgstr ""
 msgid ""
 "You can't change this purchase order as the corresponding sale is %(state)s"
 msgstr ""
+"Tega nabavnega naloga ni mogoče spremeniti, ker je ustrezna prodaja v stanju "
+"%(state)s"
 
 #. module: purchase_sale_inter_company
 #. odoo-python
@@ -168,7 +177,7 @@ msgstr ""
 msgid "You cannot create SO from PO because product '%s' is not intercompany"
 msgstr ""
 "Prodajnega naloga ni mogoče ustvariti na osnovi nabavnega, ker proizvoda "
-"'%s' ni v sklopu strukturiranih družb."
+"'%s' ni v sklopu strukturiranih družb"
 
 #. module: purchase_sale_inter_company
 #. odoo-python
@@ -177,6 +186,8 @@ msgid ""
 "You cannot create SO from PO because sale price list currency is different "
 "than purchase price list currency."
 msgstr ""
+"Prodajnega naloga ni mogoče ustvariti iz nabavnega, ker je valuta prodajnega "
+"cenika drugačna od valute nabavnega cenika."
 
 #, fuzzy
 #~ msgid "Purchase/Sale"
