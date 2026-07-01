@@ -6,7 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-07-01 09:13+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -14,26 +15,27 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__active
 msgid "Active"
-msgstr ""
+msgstr "Aktivno"
 
 #. module: res_company_category
 #: model_terms:ir.ui.view,arch_db:res_company_category.view_res_company_category_form
 msgid "Archived"
-msgstr ""
+msgstr "Arhivirano"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company__category_id
 msgid "Category"
-msgstr ""
+msgstr "Kategorija"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__child_ids
 msgid "Category Childs"
-msgstr ""
+msgstr "Podrejene kategorije"
 
 #. module: res_company_category
 #: model:ir.actions.act_window,name:res_company_category.action_company_category_to_company
@@ -41,83 +43,83 @@ msgstr ""
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__company_ids
 #: model_terms:ir.ui.view,arch_db:res_company_category.view_res_company_category_form
 msgid "Companies"
-msgstr ""
+msgstr "Družbe"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__company_qty
 msgid "Companies Quantity"
-msgstr ""
+msgstr "Število družb"
 
 #. module: res_company_category
 #: model:ir.actions.act_window,name:res_company_category.action_company_category
 #: model:ir.model,name:res_company_category.model_res_company_category
 #: model:ir.ui.menu,name:res_company_category.menu_company_category
 msgid "Company Categories"
-msgstr ""
+msgstr "Kategorije družb"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__complete_name
 msgid "Complete Name"
-msgstr ""
+msgstr "Polni naziv"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Ustvaril"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Ustvarjeno"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Prikazani naziv"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zadnji posodobil"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zadnjič posodobljeno"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__name
 #: model_terms:ir.ui.view,arch_db:res_company_category.view_res_company_category_form
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: res_company_category
 #: model:ir.model.fields.selection,name:res_company_category.selection__res_company_category__type__normal
 msgid "Normal"
-msgstr ""
+msgstr "Običajna"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__parent_id
 #: model_terms:ir.ui.view,arch_db:res_company_category.view_res_company_category_form
 msgid "Parent Category"
-msgstr ""
+msgstr "Nadrejena kategorija"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__parent_path
 msgid "Parent Path"
-msgstr ""
+msgstr "Nadrejena pot"
 
 #. module: res_company_category
 #: model:ir.model.fields,field_description:res_company_category.field_res_company_category__type
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 #. module: res_company_category
 #: model:ir.model.fields.selection,name:res_company_category.selection__res_company_category__type__view
 msgid "View"
-msgstr ""
+msgstr "Prikaz"
